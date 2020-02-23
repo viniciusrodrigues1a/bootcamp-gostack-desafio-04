@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-import Comment from '../Comment';
+import Comments from '../Comment';
 
 function Post({ post }) {
   return (
@@ -26,7 +26,7 @@ function Post({ post }) {
         <>
           <hr className="divider" />
 
-          {post.comments.map(comment => <Comment comment={comment} />)}
+          <Comments comments={post.comments} />
         </>
       )}
 
