@@ -13,8 +13,11 @@ class Comments extends Component {
   render() {
     const { comments, indentationLevel, reply } = this.state;
     return (
-      comments.map(comment => (
-        <div className={`${(indentationLevel === 0) ? 'comment-wrapper' : ''}`}>
+      comments.map((comment, index) => (
+        <div 
+          className={`${(indentationLevel === 0) ? 'comment-wrapper' : ''}`}
+          key={`${comment.author.name}-${index}-${comment.id}`}
+        >
           <div className='comment' style={{ marginLeft: indentationLevel + 'em' }}>
             <div>
               <img 

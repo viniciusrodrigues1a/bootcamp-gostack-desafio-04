@@ -157,8 +157,8 @@ class PostList extends Component {
 
     return (
       <main>
-        {posts.map(post => (
-          <Post post={post} />
+        {posts.map((post, index) => (
+          <Post post={post} key={`post-${index}`} />
         ))}
       </main>
     )
