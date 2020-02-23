@@ -1,10 +1,16 @@
 .comment-wrapper {
   border-left: 1px solid #aaa;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
   padding-left: 0.4em;
 }
 
 .comment-wrapper + .comment-wrapper {
   margin-top: 1em;
+}
+
+.comment:first-of-type {
+  padding-top: 1em;
 }
 
 .comment {
