@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
@@ -31,6 +32,10 @@ function Post({ post }) {
 
     </div>
   )
+}
+
+Post.propTypes = {
+  post: PropTypes.object.isRequired
 }
 
 export default Post;
