@@ -1,0 +1,31 @@
+.comment-wrapper {
+  border-left: 1px solid #aaa;
+  padding-left: 0.4em;
+}
+
+.comment-wrapper + .comment-wrapper {
+  margin-top: 1em;
+}
+
+.comment {
+  display: flex;
+}
+
+.comment-content {
+  background: #eee;
+  border-radius: 25px;
+  margin: 0 2em 1em 1em;
+  padding: 0.2em 0.7em;
+}
+
+.reply-comment-content {
+  background: #42b3ff7a;
+}
+
+.comment-content p span {
+  font-weight: bold;
+}
+
+.reply-user-img {
+  width: 3em !important;
+}
