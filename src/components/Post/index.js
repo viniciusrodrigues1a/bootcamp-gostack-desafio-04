@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-import Comments from '../Comment';
+import Comments from '../Comments';
 
 function Post({ post }) {
   return (
